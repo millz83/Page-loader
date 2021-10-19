@@ -1,0 +1,31 @@
+body {
+    background-color: #444;
+}
+
+.loader {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+
+.loading {
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    border:12px solid #444;
+    border-top:12px solid slateblue;
+    border-bottom:12px solid slateblue;
+    animation:animate 2s linear infinite;
+
+}
+
+@keyframes animate {
+    0% {
+        transform:rotate(0deg) scale(1.0);
+    }
+    100% {
+        transform:rotate(360deg) scale(1.2);
+    }
+}
